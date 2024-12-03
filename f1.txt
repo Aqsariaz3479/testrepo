@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Figure Caption</title>
+</head>
+<style>
+    header{
+        background-color: rgb(221, 130, 19);
+    }
+    .all-browsers{
+      margin:0;
+      padding:5px;
+      background-color: lightgray;
+    }
+    .all-browsers > h1, .browsers{
+        margin:10px;
+        padding: 5px;
+    }
+    .browser{
+        background:white;
+    }
+    .browser > h2,p{
+        margin:4px;
+        font-size:90%;
+    }
+    aside{
+        width:20%;
+        height: 50%;
+        padding-left: 10px;
+        margin-left:10px;
+        float: right;
+        font-style: oblique;
+        background-color: lightgray;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .left{
+        background-color: rgb(209, 194, 223);
+        float:left;
+        padding: 20px;
+        width: 40%;
+    }
+    .main{
+        background-color: rgb(209, 194, 223);
+        float:left;
+        padding: 20px;
+        width: 40%;  
+    }
+    .right{
+        background-color: rgb(209, 194, 223);
+        float:left;
+        padding: 20px;
+        width: 40%;
+    }
+    @media screen and (max-width:800px) {
+        .left, .main, .right{
+            max-width:100%;
+        }
+    }
+</style>
+<body>
+    <header></header>
+    <main>
+        <h2>Places to visit</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere recusandae exercitationem doloremque beatae, earum nihil ipsam possimus placeat impedit commodi tempora fuga quos quae iusto sint, quisquam sed quaerat aliquid.</p>
+        <aside>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nisi vitae eligendi debitis asperiores eaque similique ad atque ducimus, nesciunt, in omnis tempora, suscipit fugiat incidunt cupiditate saepe quae modi!</p>
+        </aside>
+        <figure>
+            <img src="images.jpeg" alt="logo" style="width:15%">
+            <figcaption>Fig.1.1- Nav-bar logo image</figcaption>
+        </figure>
+        <article class="all-browsers">
+            <h1>Most Popular Browsers</h1>
+            <article class="browser">
+                <h2>Google chrome</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro vel cumque eum soluta culpa mollitia sapiente ad omnis eveniet, et quas fuga iure quia consequuntur fugit. Quis, illo culpa?</p>
+            </article>
+            <article class="browser">
+                <h2>Google chrome</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro vel cumque eum soluta culpa mollitia sapiente ad omnis eveniet, et quas fuga iure quia consequuntur fugit. Quis, illo culpa?</p>
+            </article>
+            <article class="browser">
+                <h2>Google chrome</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro vel cumque eum soluta culpa mollitia sapiente ad omnis eveniet, et quas fuga iure quia consequuntur fugit. Quis, illo culpa?</p>
+            </article>
+        </article>
+    </main>
+    <iframe src="https://www.wikipedia.org/" style="width:400px" height="400px;">Welcome to the world</iframe>
+    <h1>My first javascript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML= Date()"> Click me to display date and time
+        <p id="demo"></p>
+    </button><br>
+    <img src="img.jpg" style="max-width:100%; height:auto;"><br><br>
+    <img src="img.jpg"><br><br>
+    <picture>
+        <source srcset="flowers.jpeg" media="(max-width: 600px)">
+        <source srcset="flowers img.jpeg" media="(max-width: 1500px)">
+        <source srcset="small flowers img.jpeg">
+        <img src="small flowers img.jpeg" alt="Flowers" style="width:auto;">
+      </picture><br>
+      <div class="left">
+        <p>Left side</p>
+      </div><br>
+      <div class="main">
+        <p>main content</p>
+      </div><br>
+      <div class="right">
+        <p>right side</p>
+      </div>
+</body>
+</html>
